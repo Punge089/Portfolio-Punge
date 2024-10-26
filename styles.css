@@ -589,3 +589,57 @@ button:hover {
 .skillc {
   background-color: #0a0113;
 }
+
+.btn-gradient-1 {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #0f0f99, #ffeb3b) 1;
+  border-radius: 5px;
+  background-color: #0a0113; 
+  color: #fdd835;
+
+  font-family: monospace;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-1::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 235, 59, 0.3), transparent 60%);
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.btn-gradient-1:hover::before {
+  opacity: 1;
+}
+
+.btn-gradient-1:hover {
+  border-image: linear-gradient(to right, #ffeb3b, #fdd835) 1;
+  color: #fff;
+}
+
+@keyframes pulse-border {
+  0% {
+    border-width: 3px;
+  }
+  50% {
+    border-width: 10px;
+  }
+  100% {
+    border-width: 3px;
+  }
+}
+
+.btn-gradient-1:hover {
+  animation: pulse-border 2s infinite ease-in-out;
+}
