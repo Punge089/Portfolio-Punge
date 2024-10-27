@@ -593,7 +593,7 @@ button:hover {
 .btn-gradient-1 {
   border-width: 3px;
   border-style: solid;
-  border-image: linear-gradient(to right, #0f0f99, #ffeb3b) 1;
+  border-image: linear-gradient(to right, #f3db00, rgb(161, 3, 209)) 1;
   border-radius: 5px;
   background-color: #0a0113; 
   color: #fdd835;
