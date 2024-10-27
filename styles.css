@@ -708,3 +708,21 @@ header {
     border-bottom: 1px solid #333;
   }
 }
+
+.gradient1 {
+  background: linear-gradient(45deg, #ff6b6b, #f5f7fa);
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient2 {
+  background: linear-gradient(45deg, #48c6ef, #6f86d6);
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient3 {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  background-clip: text;
+  color: transparent;
+}

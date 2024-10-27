@@ -7,13 +7,17 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active');
 };
 
-// Typing Animation for Home Section
-const typed = new Typed('.home-content h3 span', {
-  strings: ['Porto', 'Developer', 'Gamer'],
+const typed = new Typed('#typed-text', {
+  strings: [
+    "<span class='gradient1'>Porto</span>",
+    "<span class='gradient2'>Developer</span>",
+    "<span class='gradient3'>Gamer</span>"
+  ],
   typeSpeed: 120,
   backSpeed: 120,
   backDelay: 300,
-  loop: true
+  loop: true,
+  contentType: 'html' 
 });
 
 // Project Card Hover Effect
